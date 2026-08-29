@@ -1,4 +1,11 @@
-/* eslint-disable @typescript-eslint/triple-slash-reference */
-/// <reference path="MusicKit.d.ts">
+import {
+    MusicKitObject
+} from './MusicKit';
 
-declare var MusicKit: MusicKit;
+declare global {
+    var MusicKit: MusicKitObject;
+
+    interface GlobalEventHandlersEventMap {
+        'musickitloaded': CustomEvent<void>;
+    }
+}
