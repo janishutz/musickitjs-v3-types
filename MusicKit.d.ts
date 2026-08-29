@@ -1,5 +1,10 @@
+/* eslint-disable @typescript-eslint/triple-slash-reference */
+/// <reference path="MusicKitInstance.d.ts" />
+/// <reference path="enums.d.ts" />
+/// <reference path="MusicKitAPI.d.ts" />
+
 declare namespace MusicKit {
-    interface MusicKitConfiguration {
+    export interface MusicKitConfiguration {
         /**
          * See https://js-cdn.music.apple.com/musickit/v3/docs/iframe.html?path=/story/get-started--page#configuring-musickit-on-the-web
          */
@@ -34,5 +39,9 @@ declare namespace MusicKit {
         'storefrontId'?: string;
     }
 
-    function configure ( config: MusicKitConfiguration ): Promise<MusicKitInstance>;
+    export function configure ( config: MusicKitConfiguration ): Promise<MusicKitInstance>;
+
+    export function getInstance (): MusicKitInstance;
+
+    export function formatArtworkURL ( artwork: Artwork, width: number, height: number ): string;
 }

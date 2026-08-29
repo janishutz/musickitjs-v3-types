@@ -1,4 +1,27 @@
 {
+  "name": "musickitjs-v3-types",
+  "version": "1.0.0",
+  "description": "Types for musickit js version 3.0",
+  "keywords": [
+    "musickitjs",
+    "types"
+  ],
+  "homepage": "https://github.com/janishutz/musickitjs-v3-types#readme",
+  "bugs": {
+    "url": "https://github.com/janishutz/musickitjs-v3-types/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janishutz/musickitjs-v3-types.git"
+  },
+  "license": "GPL-3.0-or-later",
+  "author": "Janis Hutz",
+  "type": "module",
+  "main": "index.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
