@@ -42,9 +42,22 @@ export interface MusicKitConfiguration {
 }
 
 export interface MusicKitObject {
+    /**
+     * Configure MusicKit
+     * @param config - Configuration of MusicKit
+     */
     'configure': ( config: MusicKitConfiguration ) => Promise<MusicKitInstance>;
 
+    /**
+     * Retrieve the MusicKit instance after configuring it.
+     */
     'getInstance': () => MusicKitInstance;
 
+    /**
+     * Format an artwork object to get the formatted URL.
+     * @param artwork - The artwork object as retrieved from the API
+     * @param width - The desired width of the artwork
+     * @param height - The desired height of the artwork
+     */
     'formatArtworkURL': ( artwork: Artwork, width: number, height: number ) => string;
 }
