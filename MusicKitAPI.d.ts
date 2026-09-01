@@ -9,10 +9,10 @@ export interface MusicKitAPI {
      */
     'music': (
         path: string,
-        params: {
+        params?: {
             [key: string]: string
         },
-        opts: {
+        opts?: {
             'fetchOptions': RequestInit
         }
     ) => Promise<{
