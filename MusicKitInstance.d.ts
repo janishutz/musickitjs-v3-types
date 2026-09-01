@@ -167,7 +167,7 @@ export interface MusicKitInstance {
      * @param callback - a callable function, whose arguments depend on the event listened to
      * @param options - Any further options (currently only 'once', which, if set to true, removes the listener after it was triggered once)
      */
-    'addEventListener': ( name: string, callback: CallableFunction, options: {
+    'addEventListener': ( name: string, callback: CallableFunction, options?: {
         'once': boolean
     } ) => void;
     /**
