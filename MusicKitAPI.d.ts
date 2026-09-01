@@ -10,7 +10,7 @@ export interface MusicKitAPI {
     'music': (
         path: string,
         params?: {
-            [key: string]: string
+            [key: string]: unknown
         },
         opts?: {
             'fetchOptions': RequestInit
