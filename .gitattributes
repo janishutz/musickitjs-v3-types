@@ -1,1 +1,2 @@
 eslint.config.mjs linguist-generated
+*.d.ts linguist-language=ts
